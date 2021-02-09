@@ -41,7 +41,7 @@ jobs:
       - name: boardsource3x4 Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 boardsource_3x4_nice_nano.uf2
+        run: cp build/zephyr/zmk.uf2 boardsource3x4_nice_nano.uf2
       - name: Archive (boardsource3x4)
         uses: actions/upload-artifact@v2
         with:
